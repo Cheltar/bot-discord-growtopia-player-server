@@ -2,6 +2,9 @@
 • Simple Check Online Player In Growtopia
 # Note!!! Before you run node index.js
 • npm i discord.js
+<br>
+• Network must can accses https://growtopiagame.com if you network can't accses growtopiagame/forbidden u cant run bot discord
+Try use vpn if u network get block.
 # How To Run This
 • You Need Install NodeJS latest Version
 <br>
