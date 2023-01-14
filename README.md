@@ -9,6 +9,6 @@
 <br>
 • Run with cmd
 # Commands
-• ${prefix} growtopiaplayer
+• ${prefix} growtopiaplayer -- send message player online
 <br>
-• ${prefix} ping
+• ${prefix} ping -- send message ping
