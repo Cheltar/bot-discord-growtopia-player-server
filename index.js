@@ -4,7 +4,7 @@ const client = new Client({ intents: [
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
 ]});
-const { token, prefixs} = require('./config.json')
+const { token, prefix} = require('./config.json')
 const request = require('request')
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -20,7 +20,7 @@ function getTotalOnlinePlayers(callback) {
   });
 }
 client.on('messageCreate',(message) => {
-  if (message.content.toLowerCase() === `${prefixs}growtopiaplayer`) {
+  if (message.content.toLowerCase() === `${prefix}growtopiaplayer`) {
     getTotalOnlinePlayers((error, totalOnline) => {
     message.channel.send(`Total Player : ${totalOnline}`)
     }
@@ -38,7 +38,7 @@ getTotalOnlinePlayers((error, totalOnline) => {
 })
 */
 client.on('messageCreate',(message)=> {
-  if (message.content.toLowerCase() === `${prefixs}ping`) {  
+  if (message.content.toLowerCase() === `${prefix}ping`) {  
     message.channel.send(`Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
   }
 });
