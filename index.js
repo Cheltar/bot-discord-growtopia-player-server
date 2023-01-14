@@ -4,7 +4,7 @@ const client = new Client({ intents: [
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
 ]});
-const { token, prefix} = require('./config.json')
+const { token, prefix } = require('./config.json') // Configuration 
 const request = require('request')
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -33,6 +33,7 @@ client.on('messageCreate',(message) => {
 });
 
 ;
+// console test
 /*
 getTotalOnlinePlayers((error, totalOnline) => {
   if(error){
@@ -47,5 +48,5 @@ client.on('messageCreate',(message)=> {
     message.channel.send(`Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
   }
 });
-
+//Login Bot 
 client.login(token);
