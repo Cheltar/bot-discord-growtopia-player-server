@@ -10,7 +10,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('messageCreate',(message)=> {
+client.on('messageCreate',(message) => {
     if (message.content.toLowerCase() === `${prefix}command`) {
         message.channel.send(`command: ${prefix}growtopiaplayer ${prefix}ping`)
     }
